@@ -1,0 +1,2 @@
+rootProject.name='World Treasure'
+include ':app'

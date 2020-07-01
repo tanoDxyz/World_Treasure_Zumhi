@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bright_blue">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tvturnon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/_35sdp"
+        android:layout_marginEnd="@dimen/_35sdp"
+        android:textSize="13sp"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:textColor="#ffffff"
+        android:lineSpacingExtra="6sp"
+        android:gravity="center_horizontal"
+        android:text="@string/turn_on_location"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_safemapicon"
+        app:layout_constraintTop_toBottomOf="@+id/tvturnon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/trackable_icon"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="#ffffff"
+        app:layout_constraintTop_toBottomOf="@+id/iv_safemapicon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/NoThanks"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_60sdp"
+            android:background="#ffffff"
+            app:layout_constraintHorizontal_bias="1.8"
+            android:gravity="center"
+            android:lineSpacingExtra="8sp"
+            android:maxLines="1"
+            android:text="@string/no_thanks"
+            android:textAllCaps="false"
+            android:textColor="#3f51b5"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/Ok_location"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Ok_location"
+            android:layout_width="@dimen/_70sdp"
+            android:background="#ffffff"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:lineSpacingExtra="8sp"
+            android:textAllCaps="false"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="@string/ok"
+            android:textColor="#3f51b5"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

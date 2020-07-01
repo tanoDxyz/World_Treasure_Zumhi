@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp"
+    android:background="#ffffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<ImageView
+    android:layout_width="@dimen/_50sdp"
+    android:layout_height="@dimen/_50sdp"
+    android:id="@+id/ivtrackableimage"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:src="@drawable/trackables"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvtrackablecode"
+        app:layout_constraintTop_toTopOf="@id/ivtrackableimage"
+        app:layout_constraintStart_toEndOf="@id/ivtrackableimage"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/light_grey"
+        android:lineSpacingExtra="@dimen/_4sdp"
+        android:text="@string/trackable_code"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvtrackableheadline"
+        app:layout_constraintTop_toBottomOf="@id/tvtrackablecode"
+        app:layout_constraintStart_toEndOf="@id/ivtrackableimage"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:textSize="20sp"
+        android:textColor="@color/silver"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/americoin"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvtrackablelength"
+        app:layout_constraintTop_toBottomOf="@id/tvtrackableheadline"
+        app:layout_constraintStart_toEndOf="@id/ivtrackableimage"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:textSize="12sp"
+        android:textColor="@color/silver"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/_0_m"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:id="@+id/tvtrackablelog"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@drawable/round_blue_bg"
+        android:text="@string/log"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
